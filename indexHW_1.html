@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JS Less_14_hw</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+    body{
+     background-color: #837ae5;
+     display: flex;
+     justify-content: space-between;
+    }
+    .fon{
+     width: 700px;
+     height: 700px;
+     background-image: url(pngwing.com.png);
+     background-size: cover;
+    }
+    h4{
+     padding-top: 30px;
+     padding-right: 10px;
+     padding-left: 50px;
+     box-sizing: border-box;
+     font-size: 30px;
+     margin: 0;
+     color: white;
+    }
+    p{
+     height: 30px;
+     width: 340px;
+     color: black;
+     font-size: 25px;
+     padding: 5px 5px 5px 100px;
+     background-color: rgba(185, 191, 196, 1);
+     text-shadow: black 0 0 1px;
+     display: none;
+    }
+    .log{
+     padding-left: 50px;
+     display: flex;
+     width: 100%;
+     justify-content: flex-start;
+     align-items: baseline;
+    }
+    input{
+        height: 30px;
+        width: 300px;
+        font-size: 25px;
+    }
+    .but{
+        height: 30px;
+        width: 130px;
+        background-color: green;
+        border: 0;
+    }
+    form{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .cont{
+        display: flex;
+    }
+    .temp_3{
+        color: white;
+        font-size: 50px;
+
+    }
+    #obg{
+        margin-top: 50px;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .temp_4{
+        color: white;
+        font-size: 50px;
+        padding-bottom: 20px;
+
+    }
+    #ops{
+        background-image: url();
+        background-size: 290px;
+        background-position: center center; 
+        width: 290px;
+        height: 150px;
+        text-align: center;
+        padding-top: 50px;
+        box-sizing: border-box;
+        color: green;
+        -webkit-text-stroke: 0.8px #000;
+        font-weight: bolder;
+    }
+    .temp_5{
+        color: white;
+        font-size: 30px;
+    }
+
+    </style>
+
+</head>
+<body>
+
+<div> 
+    <div class="log"><h4>Название города </h4>
+        <form><input type="text" id="city" placeholder="Moscow, London ..." onchange="city_name(this.value)"><input class="but" type="button" value="Готово"></form></div>
+    <div class="cont"><div>
+    <p>Температура: <span class="temp"></span>°C </p>
+    <p>Ощущается как: <span class="temp_0"></span>°C </p>
+    <p>Мин. температура: <span class="temp_1"></span>°C </p>
+    <p>Макс. температура: <span class="temp_2"></span>°C </p>
+    <p>Атм. давление: <span class="press"></span>мм.рт.ст. </p>
+    <p>Влажность: <span class="humidity"></span>%</p>
+    <p>Ветер: <span class="wind"></span> км/ч</p>
+    </div>
+    <div id="obg">
+    <span class="temp_3"></span><span id="ops" class="temp_4"></span><span class="temp_5"></span>
+    </div>
+    </div>
+</div>
+<div class="fon"></div>
+
+
+<script src="scriptHW_1.js"></script>
+
+
+</body>
