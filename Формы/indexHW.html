@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JS Less_14_hw</title>
+    <style>
+        td{
+            height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+<form id="id_form" onsubmit="return checkForm()">
+    <table >
+        <tr>
+            <td>
+                Имя
+            </td>
+            <td>
+                <input id="name" type="text" name="name" placeholder="Иван">
+            </td>
+                        <td>
+                Фамилия
+            </td>
+            <td>
+                <input id="Sname" type="text" name="Sname" placeholder="Иванов">
+            </td>
+        </tr>
+        <tr>
+            <td >
+                Дата рождения
+            </td>
+            <td>
+                <input id="Date" type="text" name="Date" placeholder="дд.мм.гггг">
+            </td>
+        </tr>
+        <tr>
+            <td >
+                Желаемая должность
+            </td>
+            <td colspan="3">
+                <input id="Work" type="text" style="width: 100%" name="Work" placeholder="Разработчик">
+            </td>
+        </tr>
+        <tr>
+            <td >
+                Опыт работы
+            </td>
+            <td  colspan="1">Есть
+                <input checked="checked" type="radio" name="WorkLenght">
+            </td>
+            <td colspan="1">Нет
+                <input type="radio" name="WorkLenght">
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td >
+                Навыки
+            </td>
+            <td colspan="3">
+                <textarea  id="text" style="width: 100%; height: 200px;" placeholder="Опишите полезные навыки и личные качества"></textarea>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Отправить">
+            </td>
+        </tr>   
+    </table>
+</form>
+
+
+
+
+<script src="scriptHW.js"></script>
+
+
+</body>
